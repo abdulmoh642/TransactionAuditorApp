@@ -1,0 +1,19 @@
+#Dependencies required for the FastAPI service
+
+fastapi
+uvicorn[standard]
+pydantic
+
+#Dependencies for LangChain and Google Gemini integration
+
+langchain
+langchain-core
+langchain-community
+langchain-google-genai
+
+#Dependencies for RAG document processing
+
+pandas
+openpyxl # For reading Excel files
+unstructured # For loading various document types
+pypdf # For loading PDF files

@@ -1,0 +1,41 @@
+/* stylelint-disable at-rule-no-unknown */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* ...existing code... */
+/* Custom base styles for the dark mode application */
+:root {
+  /* This prevents scrollbar flash and ensures smooth transitions */
+  color-scheme: dark;
+}
+
+body {
+  /* Set background and text color to match the dark theme */
+  background-color: #1f2937; /* A dark gray to match Tailwind's gray-800 */
+  color: #f3f4f6; /* Light gray text color */
+  
+  /* Ensure the body takes up the full viewport height */
+  min-height: 100vh;
+  margin: 0;
+  
+  /* Use the system font and smooth rendering */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure the root React app container fills the screen */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Simple fix for markdown code blocks being invisible on a dark background */
+:not(pre) > code {
+  background-color: #374151 !important;
+  color: #f3f4f6 !important;
+  padding: 0.2em 0.4em;
+  border-radius: 0.3em;
+}
