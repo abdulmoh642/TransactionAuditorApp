@@ -1,4 +1,6 @@
-{
+{"engines": {
+  "node": ">=20.19.0"
+},
   "name": "transactionlangchainagent-ui",
   "version": "1.0.0",
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
