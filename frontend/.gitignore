@@ -1,0 +1,23 @@
+#Node.js dependencies
+
+node_modules
+
+#Vite build output
+
+dist
+
+#Vite cache
+
+.vite
+
+#Local environment variables
+
+.env
+.env.local
+.env.development
+.env.production
+
+#IDE folders
+
+.vscode
+.idea

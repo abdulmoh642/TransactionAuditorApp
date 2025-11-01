@@ -1,1 +1,15 @@
-.azure
+#Python cache
+
+pycache/
+*.pyc
+
+#Virtual environment
+
+venv/
+.venv/
+env/
+.env/
+
+#Local environment variables
+
+.env
